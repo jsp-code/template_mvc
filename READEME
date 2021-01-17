@@ -1,0 +1,27 @@
+TEMPLATE MVC BASICO
+
+Esse é um template mvc basico, porem muito util
+com ele poderemos criar sites, e aplicativos.
+
+mas antes de comesar algumas recomendações são válidas
+
+a- observe em qual pasta vc coloca esse template:
+    tomamos cuidado para verificar se o arquivo esta no servidor local ou em
+    um servidor web. Casa esse seja web não haverá problema, mas se tiver no local
+    e estiver na raiz, vc devera mudar a linha 12 do arquivo index.php
+
+    define('SUBDOMINIO',"/".basename(__DIR__)."/");
+
+    para 
+
+    define('SUBDOMINIO',"/");
+
+    Fisemos desse jeito para que esse template podesse ser usado, em varios projetos
+    sem muitas configurações no apache.
+
+b - não esqueça de configurar o model conforme seu bamco de dados:
+    Você poderá fazer isso modivicando a linha 9,10 e 11 do arquivo
+    class model.php.
+
+Fora esses detalhes, acredito que sua esperiencia com esse template será muito bacana!
+bom trabalho!!!
